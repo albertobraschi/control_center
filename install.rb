@@ -9,19 +9,21 @@ puts
 puts "Installing Control Center..."
 
 # copy our files into the project
-from = resources_dir + "/control_center.css"
-to = RAILS_ROOT + "/public/stylesheets/control_center.css" 
-puts "Copying stylesheet from #{from} to #{to}..."
-File.copy(from, to)
+print "Copying stylesheet... "
+File.copy(resources_dir + "/control_center.css", 
+    RAILS_ROOT + "/public/stylesheets/control_center.css")
+puts "Done!"
 
-puts "Copying layout..."
+print "Copying layout... "
 File.copy(resources_dir + "/control_center.html.erb",
     RAILS_ROOT + "/app/views/layouts/control_center.html.erb")
+puts "Done!"
 
-puts "Copying initializer..."
+print "Copying initializer... "
 File.copy(resources_dir + "/control_center.html.erb",
-    RAILS_ROOT + "/config/initializers/control_center.rb")
+    RAILS_ROOT + "/config/initializers/control_center.rb")    
+puts "Done!"
 
-# print out the readme
-puts # readme content gets printed here
+# puts some space in here
+puts
 puts
