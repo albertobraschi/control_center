@@ -9,9 +9,10 @@ puts
 puts "Installing Control Center..."
 
 # copy our files into the project
-puts "Copying stylesheet..."
-File.copy(resources_dir + "/control_center.css", 
-    RAILS_ROOT + "/public/stylesheets/control_center.css")
+from = resources_dir + "/control_center.css"
+to = RAILS_ROOT + "/public/stylesheets/control_center.css" 
+puts "Copying stylesheet from ..."
+File.copy(from, to)
 
 puts "Copying layout..."
 File.copy(resources_dir + "/control_center.html.erb",
