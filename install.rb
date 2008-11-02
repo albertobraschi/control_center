@@ -20,7 +20,7 @@ File.copy(resources_dir + "/control_center.html.erb",
 puts "Done!"
 
 print "Copying initializer... "
-File.copy(resources_dir + "/control_center.html.erb",
+File.copy(resources_dir + "/control_center.rb",
     RAILS_ROOT + "/config/initializers/control_center.rb")    
 puts "Done!"
 
