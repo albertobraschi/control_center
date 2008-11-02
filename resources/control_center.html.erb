@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= ControlCenter::Config.title %> - <%= yield :title %></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+
+    <%= stylesheet_link_tag 'control_center' %>
+
+  </head>
+  <body>
+    <div id="header">
+      <h1><%= ControlCenter::Config.title %></h1>
+      <div id="signed_in_as">
+        <%= link_to "Return to Site &rarr;", "/" %>
+      </div>
+    </div>
+
+    <ul id="primary_nav">
+      <% ControlCenter.tabs.each do |tab| %>
+        <li><%= link_to_unless_current h(tab[0]), tab[1] %></li>
+      <% end %>
+    </ul>
+
+    <% if flash[:message] %>
+      <div id="message"><%= flash[:message] %></div>
+    <% end %>
+
+    <% if flash[:error] %>
+      <div id="error"><%= flash[:error] %></div>
+    <% end %>
+
+    <h2><%= yield :title %></h2>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>

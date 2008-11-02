@@ -1,0 +1,200 @@
+body {
+  background: #fff;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+a img {
+  border: 0;
+}
+
+th {
+  text-align: left;
+}
+
+/* header styling */
+#header {
+  background: #36393d;
+  color: #fff;
+  height: 70px;
+}
+#header h1 a {
+  text-decoration: none;
+}
+#header h1 {
+  margin: 15px 15px 15px 5px;
+  float: left;
+  font-size: 30px;
+}
+#header #signed_in_as {
+  float: right;
+  font-size: small;
+  margin: 2px 5px 0 0;
+}
+#header #signed_in_as a {
+  color: white;
+}
+#header #signed_in_as a:hover {
+  color: #36393d;
+  background: #fff;
+  text-decoration: none;
+}
+
+/* primary navigation styling */
+#primary_nav {
+  background: #c3d9ff;
+  margin: 0;
+  list-style-type: none;
+  padding: 5px 5px 7px 5px;
+  font-weight: bold;
+  font-size: small;
+}
+#primary_nav li {
+  display: inline;
+}
+#primary_nav a {
+   border-bottom: 4px solid #c3d9ff;
+   text-decoration: none;
+   padding: 3px;
+}
+#primary_nav a:hover {
+  text-decoration: underline;
+}
+#primary_nav .active {
+  background: #eee;
+  border-bottom: 4px solid #eee;
+  border-right: 2px solid #e1e1e1;
+}
+
+/* main content styling */
+h2 {
+  padding: 5px;
+}
+#content {
+  padding: 10px;
+  clear: both;
+}
+
+/* style for forms */
+form {
+  margin: 20px 0;
+}
+
+/* pager at bottom of listing pages */
+#pager {
+  text-align: center;
+  background: #eee;
+  padding: 4px;
+  margin: 7px 0;
+}
+
+/* style for tables that are used as reports */
+table {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+table thead tr {
+	border-bottom: 1px solid #000;
+}
+table tbody td {
+	padding-right: 10px;
+}
+
+label {
+  margin-top: 3px;
+  width: 100px;
+  float: left;
+}
+input[type="text"], input[type="password"] {
+  float: left;
+  width: 200px;
+}
+form div {
+  clear: both;
+}
+input[type="submit"] {
+  margin-top: 20px;
+  clear: both;
+}
+
+/* styling for errors */
+.errorExplanation {
+  border: 2px solid #c00;
+  margin-bottom: 8px;
+}
+.errorExplanation h2 {
+  float: none;
+  background: #c00;
+  margin: 0;
+  color: #fff;
+  padding: 3px;
+  font-size: large;
+}
+.errorExplanation p {
+  padding: 3px;
+  margin: 3px 0;
+}
+.fieldWithErrors {
+  width: auto;
+  float: left;
+  clear: none;
+}
+.fieldWithErrors input[type="text"], .fieldWithErrors input[type="password"] {
+  border: 2px solid #c00;
+  float: left;
+}
+.fieldWithErrors label {
+  color: #c00;
+}
+
+/* makes something 100% width */
+.wide {
+  width: 100%;
+}
+
+/* style for pagination */
+.pagination {
+  padding: 3px;
+  margin: 15px 3px 3px 3px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #aaaadd;
+  text-decoration: none;
+  color: #36393d;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #36393d;
+  color: #000;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #36393d;
+  font-weight: bold;
+  background-color: #36393d;
+  color: #FFF;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  color: #ddd;
+}
+
+/* styles for flashed messages and errors */
+#message {
+  background: #ff8;
+  font-weight: bold;
+  padding: 4px;
+  margin-top: 8px;
+}
+#error {
+  background: #c00;
+  font-weight: bold;
+  color: #fff;
+  padding: 4px;
+  margin-top: 8px;
+}
