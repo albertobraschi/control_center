@@ -3,15 +3,11 @@
 
 ControlCenter.title = "Control Center"
 
-ControlCenter.header_links = {
-  "Some" => "/some",
-  "Link" => "/link"
-}
+ControlCenter.add_header_link("Some", "/some")
+ControlCenter.add_header_link("Link", "/link")
 
-ControlCenter.tabs = {
-  "Tab1" => "/tab1",
-  "Tab2" => "/tab2",
-  "Tab3" => "/tab3"
-}
+ControlCenter.add_tab("Tab1", "/tab1")
+ControlCenter.add_tab("Test", "/test")
+ControlCenter.add_tab("Tab3", "/tab3")
 
 ControlCenter.theme_color = "#0033CC"

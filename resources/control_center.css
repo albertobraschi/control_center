@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #ddd;
   font-family: arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -23,19 +23,27 @@ th {
   text-decoration: none;
 }
 #header h1 {
-  margin: 15px 15px 15px 5px;
-  float: left;
   font-size: 30px;
+  line-height: 70px;
+  margin: 0;
+  padding: 0 0 0 20px;
 }
-#header #signed_in_as {
-  float: right;
+#header #header_links {
   font-size: small;
-  margin: 2px 5px 0 0;
+  margin: -65px 10px 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+  float: right;
 }
-#header #signed_in_as a {
+#header #header_links li {
+  float: left;
+  margin: 0 0 0 5px;
+}
+#header #header_links a {
   color: white;
 }
-#header #signed_in_as a:hover {
+#header #header_links a:hover {
   color: #36393d;
   background: #fff;
   text-decoration: none;
@@ -43,28 +51,29 @@ th {
 
 /* primary navigation styling */
 #primary_nav {
-  background: #c3d9ff;
-  margin: 0;
+  clear: both;
+  float: right;
+  margin: -27px 0 0 0;
   list-style-type: none;
-  padding: 5px 5px 7px 5px;
   font-weight: bold;
   font-size: small;
 }
 #primary_nav li {
-  display: inline;
+  float: left;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 10px;
+}
+#primary_nav li.active {
+  background: #ddd;
 }
 #primary_nav a {
-   border-bottom: 4px solid #c3d9ff;
    text-decoration: none;
    padding: 3px;
+   color: #fff;
 }
 #primary_nav a:hover {
   text-decoration: underline;
-}
-#primary_nav .active {
-  background: #eee;
-  border-bottom: 4px solid #eee;
-  border-right: 2px solid #e1e1e1;
 }
 
 /* main content styling */
@@ -74,6 +83,8 @@ h2 {
 #content {
   padding: 10px;
   clear: both;
+  background: #fff;
+  margin: 10px;
 }
 
 /* style for forms */
@@ -101,6 +112,9 @@ table tbody td {
 	padding-right: 10px;
 }
 
+fieldset {
+  border: 0;
+}
 label {
   margin-top: 3px;
   width: 100px;
@@ -188,13 +202,13 @@ input[type="submit"] {
 #message {
   background: #ff8;
   font-weight: bold;
-  padding: 4px;
-  margin-top: 8px;
+  padding: 5px 20px;
+  margin-top: 10px;
 }
 #error {
   background: #c00;
   font-weight: bold;
   color: #fff;
-  padding: 4px;
-  margin-top: 8px;
+  padding: 5px 20px;
+  margin-top: 10px;
 }

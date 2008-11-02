@@ -11,16 +11,18 @@
 
   </head>
   <body>
-    <div id="header">
+    <div id="header" style="background: <%= ControlCenter.theme_color %>">
       <h1><%= ControlCenter.title %></h1>
-      <div id="signed_in_as">
-        <%= link_to "Return to Site &rarr;", "/" %>
-      </div>
+      <ul id="header_links">
+        <% ControlCenter.header_links.each do |link| %>
+          <li><%= link_to link[0], link[1] %>
+        <% end %>
+      </ul>
     </div>
 
     <ul id="primary_nav">
       <% ControlCenter.tabs.each do |tab| %>
-        <li><%= link_to_unless_current h(tab[0]), tab[1] %></li>
+        <li <%= 'class="active"' if current_page?(tab[1])%>><%= link_to_unless_current h(tab[0]), tab[1] %></li>
       <% end %>
     </ul>
 
@@ -32,9 +34,9 @@
       <div id="error"><%= flash[:error] %></div>
     <% end %>
 
-    <h2><%= yield :title %></h2>
-
     <div id="content">
+      <h2><%= yield :title %></h2>
+
       <%= yield %>
     </div>
   </body>
