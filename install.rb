@@ -1,4 +1,5 @@
 # installs our control center stuff
+require 'ftools'
 
 # get some basic vars set up
 resources_dir = File.dirname(__FILE__)
