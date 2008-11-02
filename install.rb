@@ -2,7 +2,7 @@
 require 'ftools'
 
 # get some basic vars set up
-resources_dir = File.dirname(__FILE__)
+resources_dir = File.dirname(__FILE__) + "/resources"
 
 # print a pretty message
 puts
