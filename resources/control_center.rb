@@ -1,6 +1,8 @@
 # This is an initializer script for Control Center. Customize it to your
 # preferences
 
+ControlCenter.title = "Control Center"
+
 ControlCenter.header_links = {
   "Some" => "/some",
   "Link" => "/link"
