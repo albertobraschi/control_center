@@ -4,12 +4,12 @@ class ControlCenter
   cattr_accessor :tabs
   cattr_accessor :theme_color
   
-  def self.add_header_link(text, url)
+  def self.add_header_link(text, &block)
     ControlCenter.header_links ||= []
     ControlCenter.header_links << [text, url]
   end
   
-  def self.add_tab(text, url)
+  def self.add_tab(text, &block)
     ControlCenter.tabs ||= []
     ControlCenter.tabs << [text, url]
   end

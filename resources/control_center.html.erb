@@ -15,14 +15,14 @@
       <h1><%= ControlCenter.title %></h1>
       <ul id="header_links">
         <% ControlCenter.header_links.each do |link| %>
-          <li><%= link_to link[0], link[1] %>
+          <li><%= link_to link[0], link[1].call %>
         <% end %>
       </ul>
     </div>
 
     <ul id="primary_nav">
       <% ControlCenter.tabs.each do |tab| %>
-        <li <%= 'class="active"' if current_page?(tab[1])%>><%= link_to_unless_current h(tab[0]), tab[1] %></li>
+        <li <%= 'class="active"' if current_page?(tab[1].call)%>><%= link_to_unless_current h(tab[0]), tab[1].call %></li>
       <% end %>
     </ul>
 
