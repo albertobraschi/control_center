@@ -15,7 +15,7 @@
       <h1><%= ControlCenter.title %></h1>
       <ul id="header_links">
         <% ControlCenter.header_links.each do |link| %>
-          <li><%= link_to link[0], link[1].call %>
+          <li><%= link_to link[0], link[1].call %></li>
         <% end %>
       </ul>
     </div>
