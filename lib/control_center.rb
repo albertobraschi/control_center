@@ -6,11 +6,11 @@ class ControlCenter
   
   def self.add_header_link(text, &block)
     ControlCenter.header_links ||= []
-    ControlCenter.header_links << [text, url]
+    ControlCenter.header_links << [text, block]
   end
   
   def self.add_tab(text, &block)
     ControlCenter.tabs ||= []
-    ControlCenter.tabs << [text, url]
+    ControlCenter.tabs << [text, block]
   end
 end
