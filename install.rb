@@ -9,7 +9,7 @@ def install(source, target)
   
   print "Copying #{source}..."
   
-  if File.exists?(resources_dir + source)
+  if !File.exists?(RAILS_ROOT + target)
     File.copy(resources_dir + source,
         RAILS_ROOT + target)
     puts "Done!"
