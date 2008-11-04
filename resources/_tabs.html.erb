@@ -1,0 +1,3 @@
+<li <%= 'class="active"' if current_page?("/tab1")%>><%= link_to_unless_current "Tab 1", "/tab1" %></li>
+<li <%= 'class="active"' if current_page?("/tab2")%>><%= link_to_unless_current "Tab 2", "/tab2" %></li>
+<li <%= 'class="active"' if current_page?("/tab3")%>><%= link_to_unless_current "Tab 3", "/tab3" %></li>

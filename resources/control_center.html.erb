@@ -14,16 +14,12 @@
     <div id="header" style="background: <%= ControlCenter.theme_color %>">
       <h1><%= ControlCenter.title %></h1>
       <ul id="header_links">
-        <% ControlCenter.header_links.each do |link| %>
-          <li><%= link_to link[0], link[1].call %></li>
-        <% end %>
+        <%= render :partial => "layout/header_links" %>
       </ul>
     </div>
 
     <ul id="primary_nav">
-      <% ControlCenter.tabs.each do |tab| %>
-        <li <%= 'class="active"' if current_page?(tab[1].call)%>><%= link_to_unless_current h(tab[0]), tab[1].call %></li>
-      <% end %>
+      <%= render :partial => "layout/tabs"%>
     </ul>
 
     <% if flash[:message] %>
