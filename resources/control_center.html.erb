@@ -14,12 +14,12 @@
     <div id="header" style="background: <%= ControlCenter.theme_color %>">
       <h1><%= ControlCenter.title %></h1>
       <ul id="header_links">
-        <%= render :partial => "layout/header_links" %>
+        <%= render :partial => "layouts/header_links" %>
       </ul>
     </div>
 
     <ul id="primary_nav">
-      <%= render :partial => "layout/tabs"%>
+      <%= render :partial => "layouts/tabs"%>
     </ul>
 
     <% if flash[:message] %>
