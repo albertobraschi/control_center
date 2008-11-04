@@ -1,12 +1,12 @@
 # installs our control center stuff
 require 'ftools'
 
-# get some basic vars set up
-resources_dir = File.dirname(__FILE__) + "/resources"
-
 # quick method for copying files only if they don't already
 # exist
 def install(source, target)
+  # get some basic vars set up
+  resources_dir = File.dirname(__FILE__) + "/resources"
+  
   print "Copying #{source}..."
   
   if File.exists?(resources_dir + source)
