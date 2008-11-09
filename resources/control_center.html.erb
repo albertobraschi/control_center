@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title><%= ControlCenter.title %> - <%= yield :title %></title>
+    <title><%= ControlCenter.app_title %> - <%= @control_center_title %></title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="en-us" />
@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="header" style="background: <%= ControlCenter.theme_color %>">
-      <h1><%= ControlCenter.title %></h1>
+      <h1><%= ControlCenter.app_title %></h1>
       <ul id="header_links">
         <%= render :partial => "layouts/header_links" %>
       </ul>
@@ -31,7 +31,7 @@
     <% end %>
 
     <div id="content">
-      <h2><%= yield :title %></h2>
+      <h2><%= @control_center_title %></h2>
 
       <%= yield %>
     </div>
