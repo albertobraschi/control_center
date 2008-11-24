@@ -3,6 +3,7 @@ require 'ftools'
 
 # quick method for copying files only if they don't already
 # exist
+=begin
 def install(source, target)
   # get some basic vars set up
   resources_dir = File.dirname(__FILE__) + "/resources"
@@ -39,3 +40,4 @@ install("/_tabs.html.erb",
 # puts some space in here
 puts
 puts
+=end
