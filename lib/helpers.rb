@@ -1,5 +1,5 @@
 # Helpers that control center uses
-module ControlCenterHelper
+module ControlCenter::Helpers
   def title(title)
     @control_center_title = title
   end
