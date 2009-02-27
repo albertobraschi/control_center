@@ -15,6 +15,8 @@ class ControlCenterGenerator < Rails::Generator::Base
       m.directory(layouts_path)
       m.file('_tabs.html.erb', 
           File.join(layouts_path, "_tabs.html.erb"))
+      m.file('_tabs.html.erb', 
+          File.join(layouts_path, "_sub_nav.html.erb"))
       m.file('_header_links.html.erb',
           File.join(layouts_path, "_header_links.html.erb"))
       m.file('control_center.html.erb',

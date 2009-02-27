@@ -78,6 +78,36 @@ th {
 #primary_nav a:hover {
   text-decoration: underline;
 }
+/* secondary navigation styling */
+#secondary_nav {
+    clear: both;
+    float: left;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: small;
+    margin: 13px 0 0 -15px;
+}
+#secondary_nav li {
+  float: left;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 10px;
+    margin-right: 7px;
+}
+#secondary_nav li.active {
+  background: #fff;
+}
+#secondary_nav li.active a {
+  color: #000;
+}
+#secondary_nav a {
+   text-decoration: none;
+   padding: 3px;
+   color: #fff;
+}
+#secondary_nav a:hover {
+  text-decoration: underline;
+}
 
 /* main content styling */
 h2 {
