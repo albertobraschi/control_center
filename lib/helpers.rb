@@ -16,7 +16,7 @@ module ControlCenter::Helpers
     if @control_center_sub_tab == sub_tab_name
       options[:class] = "active" 
     else
-      options[:style] = "background-color: #{ControlCenter.theme_color};"
+      options[:style] = "background-color: #{ControlCenter::Config.theme_color};"
     end
     content_tag "li", options, true do
       link_to sub_tab_name, url
