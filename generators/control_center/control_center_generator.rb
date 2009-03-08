@@ -21,6 +21,10 @@ class ControlCenterGenerator < Rails::Generator::Base
           File.join(layouts_path, "_header_links.html.erb"))
       m.file('control_center.html.erb',
           File.join(layouts_path, "control_center.html.erb"))
+          
+      # copy the initializer over
+      m.file 'control_center.rb', 
+        File.join("config", "initializers", "control_center.rb")
     end
   end
 end

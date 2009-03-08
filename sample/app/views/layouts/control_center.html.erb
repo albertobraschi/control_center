@@ -11,7 +11,7 @@
 
   </head>
   <body>
-    <div id="header" style="background: <%= ControlCenter::Config.theme_color %>">
+    <div id="header" <%= "style=\"background: #{ControlCenter::Config.theme_color}\"" %>>
       <h1><%= ControlCenter::Config.app_title %></h1>
       <ul id="header_links">
         <%= render :partial => "layouts/header_links" %>
