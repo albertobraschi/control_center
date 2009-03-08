@@ -21,7 +21,9 @@
     <ul id="primary_nav">
       <%= render :partial => "layouts/tabs"%>
     </ul>
-
+    <ul id="secondary_nav">
+      <%= render :partial => "layouts/sub_nav" %>
+    </ul>
     <% if flash[:message] %>
       <div id="message"><%= flash[:message] %></div>
     <% end %>
