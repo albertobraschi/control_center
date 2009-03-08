@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= ControlCenter::Config.app_title %> - <%= @control_center_title %></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+
+    <%= stylesheet_link_tag 'control_center' %>
+
+  </head>
+  <body>
+    <div id="header" style="background: <%= ControlCenter::Config.theme_color %>">
+      <h1><%= ControlCenter::Config.app_title %></h1>
+      <ul id="header_links">
+        <%= render :partial => "layouts/header_links" %>
+      </ul>
+    </div>
+
+    <ul id="primary_nav">
+      <%= render :partial => "layouts/tabs"%>
+    </ul>
+    <ul id="secondary_nav">
+      <%= render :partial => "layouts/sub_nav" %>
+    </ul>
+    <% if flash[:message] %>
+      <div id="message"><%= flash[:message] %></div>
+    <% end %>
+
+    <% if flash[:error] %>
+      <div id="error"><%= flash[:error] %></div>
+    <% end %>
+
+    <div id="content">
+      <h2><%= @control_center_title %></h2>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>

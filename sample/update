@@ -1,2 +1,4 @@
 #!/bin/bash
 rsync --recursive --exclude sample --delete .. vendor/plugins/control_center
+script/destroy control_center
+script/generate control_center

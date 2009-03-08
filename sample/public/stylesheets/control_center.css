@@ -1,0 +1,250 @@
+body {
+  background: #ddd;
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+a img {
+  border: 0;
+}
+
+th {
+  text-align: left;
+}
+
+/* header styling */
+#header {
+  background: #36393d;
+  color: #fff;
+  height: 70px;
+}
+#header h1 a {
+  text-decoration: none;
+}
+#header h1 {
+  font-size: 30px;
+  line-height: 70px;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+#header #header_links {
+  font-size: small;
+  margin: -65px 15px 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+  float: right;
+}
+#header #header_links li {
+  float: left;
+  margin: 0 0 0 5px;
+}
+#header #header_links a {
+  color: white;
+}
+#header #header_links a:hover {
+  color: #36393d;
+  background: #fff;
+  text-decoration: none;
+}
+
+/* primary navigation styling */
+#primary_nav {
+  clear: both;
+  float: right;
+  margin: -27px 5px 0 0;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: small;
+}
+#primary_nav li {
+  float: left;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 10px;
+}
+#primary_nav li.active {
+  background: #ddd;
+}
+#primary_nav li.active a {
+  color: #000;
+}
+#primary_nav a {
+   text-decoration: none;
+   padding: 3px;
+   color: #fff;
+}
+#primary_nav a:hover {
+  text-decoration: underline;
+}
+/* secondary navigation styling */
+#secondary_nav {
+    clear: both;
+    float: left;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: small;
+    margin: 13px 0 0 -15px;
+}
+#secondary_nav li {
+  float: left;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 10px;
+    margin-right: 7px;
+}
+#secondary_nav li.active {
+  background: #fff;
+}
+#secondary_nav li.active a {
+  color: #000;
+}
+#secondary_nav a {
+   text-decoration: none;
+   padding: 3px;
+   color: #fff;
+}
+#secondary_nav a:hover {
+  text-decoration: underline;
+}
+
+/* main content styling */
+h2 {
+  padding: 5px;
+}
+#content {
+  padding: 10px;
+  clear: both;
+  background: #fff;
+  margin: 10px;
+}
+
+/* style for forms */
+form {
+  margin: 20px 0;
+}
+
+/* pager at bottom of listing pages */
+#pager {
+  text-align: center;
+  background: #eee;
+  padding: 4px;
+  margin: 7px 0;
+}
+
+/* style for tables that are used as reports */
+table {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+table thead tr {
+	border-bottom: 1px solid #000;
+}
+table tbody td {
+	padding-right: 10px;
+}
+
+fieldset {
+  border: 0;
+}
+label {
+  margin-top: 3px;
+  width: 100px;
+  float: left;
+}
+input[type="text"], input[type="password"] {
+  float: left;
+  width: 200px;
+}
+textarea {
+  margin: 0;
+}
+form div {
+  clear: both;
+}
+input[type="submit"] {
+  margin-top: 20px;
+  clear: both;
+}
+
+/* styling for errors */
+.errorExplanation {
+  border: 2px solid #c00;
+  margin-bottom: 8px;
+}
+.errorExplanation h2 {
+  float: none;
+  background: #c00;
+  margin: 0;
+  color: #fff;
+  padding: 3px;
+  font-size: large;
+}
+.errorExplanation p {
+  padding: 3px;
+  margin: 3px 0;
+}
+.fieldWithErrors {
+  width: auto;
+  float: left;
+  clear: none;
+}
+.fieldWithErrors input[type="text"], .fieldWithErrors input[type="password"] {
+  border: 2px solid #c00;
+  float: left;
+}
+.fieldWithErrors label {
+  color: #c00;
+}
+
+/* makes something 100% width */
+.wide {
+  width: 100%;
+}
+
+/* style for pagination */
+.pagination {
+  padding: 3px;
+  margin: 15px 3px 3px 3px;
+}
+.pagination a {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #aaaadd;
+  text-decoration: none;
+  color: #36393d;
+}
+.pagination a:hover, .pagination a:active {
+  border: 1px solid #36393d;
+  color: #000;
+}
+.pagination span.current {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #36393d;
+  font-weight: bold;
+  background-color: #36393d;
+  color: #FFF;
+}
+.pagination span.disabled {
+  padding: 2px 5px 2px 5px;
+  margin: 2px;
+  border: 1px solid #eee;
+  color: #ddd;
+}
+
+/* styles for flashed messages and errors */
+#message {
+  background: #ff8;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+#error {
+  background: #c00;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
