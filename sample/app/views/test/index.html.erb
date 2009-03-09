@@ -1,0 +1,11 @@
+<% title "Test Page" %>
+<% select_tab "Tab 1" %>
+
+<h3>Tab Override</h3>
+<p>
+  This page overrides the main tabs with its own.
+</p>
+<p>
+  <%= link_to "Check It Out", 
+      { :controller => "test", :action => "tab_override"}%>
+</p>

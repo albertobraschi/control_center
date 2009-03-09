@@ -5,7 +5,7 @@ module ControlCenter::Helpers
   end
   
   # Block for the primary tabs on the site.
-  def tabs
+  def tabs(&block)
     if block_given?
       content_for :tabs do
         yield
