@@ -1,8 +1,5 @@
-<% content = yield :tabs %>
-<% if content.blank? %>
+<% tabs do %>
   <%= tab("Tab 1", "/") %>
   <%= tab("Tab 2", "/tab2") %>
   <%= tab("Tab 3", "/tab3") %>
-<% else %>
-  <%= content %>
 <% end %>

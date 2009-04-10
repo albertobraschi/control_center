@@ -8,10 +8,13 @@
     <meta http-equiv="Content-Language" content="en-us" />
 
     <%= stylesheet_link_tag 'control_center' %>
-
+    <style type="text/css">
+      #header { background: <%= ControlCenter::Config.theme_color %>; }
+      #secondary_nav li {background-color: <%= ControlCenter::Config.theme_color %>; }
+    </style>
   </head>
   <body>
-    <div id="header" <%= "style=\"background: #{ControlCenter::Config.theme_color}\"" %>>
+    <div id="header">
       <h1><%= ControlCenter::Config.app_title %></h1>
       <ul id="header_links">
         <%= render :partial => "layouts/header_links" %>
@@ -19,10 +22,12 @@
     </div>
 
     <ul id="primary_nav">
-      <%= render :partial => "layouts/tabs"%>
+      <%= render :partial => "layouts/tabs" %>
+      <%= yield :primary_nav %>
     </ul>
     <ul id="secondary_nav">
       <%= render :partial => "layouts/sub_nav" %>
+      <%= yield :secondary_nav %>
     </ul>
     <% if flash[:message] %>
       <div id="message"><%= flash[:message] %></div>

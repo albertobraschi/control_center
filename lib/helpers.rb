@@ -7,7 +7,7 @@ module ControlCenter::Helpers
   # Block for the primary tabs on the site.
   def tabs(&block)
     if block_given?
-      content_for :tabs do
+      content_for :primary_nav do
         yield
       end
     end
@@ -22,14 +22,19 @@ module ControlCenter::Helpers
     end
   end
   
+  # Block for the subtabs on the site.
+  def sub_tabs(&block)
+    if block_given?
+      content_for :secondary_nav do
+        yield
+      end
+    end
+  end
+  
   # Helper for generating subtabs.
   def sub_tab(sub_tab_name, url)
     options = {}
-    if @control_center_sub_tab == sub_tab_name
-      options[:class] = "active" 
-    else
-      options[:style] = "background-color: #{ControlCenter::Config.theme_color};"
-    end
+    options[:class] = "active" if @control_center_sub_tab == sub_tab_name
     content_tag "li", options, true do
       link_to sub_tab_name, url
     end
@@ -40,5 +45,14 @@ module ControlCenter::Helpers
   end
   def select_sub_tab(sub_tab)
     @control_center_sub_tab = sub_tab
+  end
+  
+  # Sets up a sidebar in control center.
+  def sidebar(&block)
+    if block_given?
+      content_for :sidebar do
+        yield
+      end
+    end
   end
 end
