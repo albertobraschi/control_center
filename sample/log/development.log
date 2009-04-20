@@ -879,3 +879,12 @@ Rendered layouts/_header_links (0.4ms)
 Rendered layouts/_tabs (1.1ms)
 Rendered layouts/_sub_nav (0.5ms)
 Completed in 84ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TestController#index (for 127.0.0.1 at 2009-04-19 20:48:36) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.7ms)
+Rendered layouts/_sub_nav (0.3ms)
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]

@@ -25,10 +25,7 @@
       <%= render :partial => "layouts/tabs" %>
       <%= yield :primary_nav %>
     </ul>
-    <ul id="secondary_nav">
-      <%= render :partial => "layouts/sub_nav" %>
-      <%= yield :secondary_nav %>
-    </ul>
+    
     <% if flash[:message] %>
       <div id="message"><%= flash[:message] %></div>
     <% end %>
@@ -36,11 +33,27 @@
     <% if flash[:error] %>
       <div id="error"><%= flash[:error] %></div>
     <% end %>
+    
+    <ul id="secondary_nav" <%= "class=\"narrow\"" if sidebar? %>>
+      <%= render :partial => "layouts/sub_nav" %>
+      <%= yield :secondary_nav %>
+    </ul>
 
-    <div id="content">
-      <h2><%= @control_center_title %></h2>
+    <% if defined? @sidebar && @sidebar %>
+      <div id="content_narrow">
+        <h2><%= @control_center_title %></h2>
 
-      <%= yield %>
-    </div>
+        <%= yield %>
+      </div>
+      <div id="sidebar">
+        <%= yield :sidebar %>
+      </div>
+    <% else %>
+      <div id="content">
+        <h2><%= @control_center_title %></h2>
+
+        <%= yield %>
+      </div>
+    <% end %>
   </body>
 </html>
