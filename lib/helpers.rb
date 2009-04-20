@@ -62,4 +62,8 @@ module ControlCenter::Helpers
       end
     end
   end
+  
+  def sidebar?
+    yield(:sidebar) != nil
+  end
 end
