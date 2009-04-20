@@ -43,8 +43,15 @@ module ControlCenter::Helpers
   def select_tab(tab)
     @control_center_tab = tab
   end
+  def current_tab
+    @control_center_tab
+  end
+  
   def select_sub_tab(sub_tab)
     @control_center_sub_tab = sub_tab
+  end
+  def current_sub_tab
+    @control_center_sub_tab
   end
   
   # Sets up a sidebar in control center.
