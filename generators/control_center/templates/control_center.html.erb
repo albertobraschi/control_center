@@ -37,16 +37,22 @@
       <%= yield :sub_tabs %>
     </ul>
 
-    <div id="content" <%= "class=\"narrow\"" if sidebar? %>>
-      <h2><%= @control_center_title %></h2>
+    <div id="main">
+      <div id="content" <%= "class=\"narrow\"" if sidebar? %>>
+        <div id="content_inside">
+          <h2><%= @control_center_title %></h2>
 
-      <%= yield %>
-    </div>
-    
-    <% if sidebar? %>
-      <div id="sidebar">
-        <%= yield :sidebar %>
+          <%= yield %>
+        </div>
       </div>
-    <% end %>
+  
+      <% if sidebar? %>
+        <div id="sidebar">
+          <div id="sidebar_inside">
+            <%= yield :sidebar %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </body>
 </html>

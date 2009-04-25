@@ -113,11 +113,39 @@ th {
 h2 {
   padding: 5px;
 }
+#main {
+  min-width: 800px;
+}
 #content {
-  padding: 5px 10px 10px 10px;
   clear: both;
+}
+#content_inside {
+  padding: 5px 10px 10px 10px;
+  margin: 0 10px;
   background: #fff;
-  margin: 10px;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  min-width: 800px;
+}
+
+#content.narrow {
+  float: left;
+  width: 70%;
+}
+#content.narrow #content_inside {
+  min-width: 560px;
+}
+
+#sidebar {
+  float: left;
+  width: 30%;
+}
+#sidebar_inside {
+  min-width: 240px;
+  margin: 0 10px 0 0;
+}
+.sidebar_box {
+  border-bottom: 2px solid #ccc;
 }
 
 /* style for forms */
