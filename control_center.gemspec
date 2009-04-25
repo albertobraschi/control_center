@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
     interfaces for website administration and application prototyping.
   DESC
 
-  s.files = Dir.glob("{lib,rails,generators,tasks,test}/**/*") + %w(README MIT-LICENSE)
+  s.files = Dir.glob("{lib,rails,generators,tasks,test}/**/*") + %w(README.markdown MIT-LICENSE)
   s.require_path = 'lib'
   s.has_rdoc = true
 
