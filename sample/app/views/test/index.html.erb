@@ -1,5 +1,11 @@
 <% title "Test Page" %>
 <% select_tab "Tab 1" %>
+<% select_sub_tab "Sub Tab" %>
+
+<% sub_tabs do %>
+  <%= sub_tab "Sub Tab", "/" %>
+  <%= sub_tab "Sub Tab 2", "/2" %>
+<% end %>
 
 <h3>Tab Override</h3>
 <p>

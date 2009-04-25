@@ -1,62 +1,38 @@
+require 'tab_builder'
+
 # Helpers that control center uses
 module ControlCenter::Helpers
+  
   def title(title)
     @control_center_title = title
   end
   
-  # Block for the primary tabs on the site.
-  def tabs(&block)
-    if block_given?
-      content_for :primary_nav do
-        yield
-      end
-    end
-  end
-  
-  # Helper for generating tabs.
-  def tab(tab_name, url)
-    options = {}
-    options[:class] = "active" if @control_center_tab == tab_name
-    content_tag "li", options, true do
-      link_to tab_name, url
-    end
-  end
-  
-  # Block for the subtabs on the site.
-  def sub_tabs(&block)
-    if block_given?
-      content_for :secondary_nav do
-        yield
-      end
-    end
-  end
-  
-  # Helper for generating subtabs.
-  def sub_tab(sub_tab_name, url)
-    options = {}
-    options[:class] = "active" if @control_center_sub_tab == sub_tab_name
-    content_tag "li", options, true do
-      link_to sub_tab_name, url
-    end
-  end
-  
   def select_tab(tab)
-    @control_center_tab = tab
+    @cc_current_tab = tab
   end
   def current_tab
-    @control_center_tab
+    @cc_current_tab
   end
   
-  def select_sub_tab(sub_tab)
-    @control_center_sub_tab = sub_tab
+  def sub_tabs
+    if block_given?
+      content_for :sub_tabs do
+        yield
+      end
+    end
+  end
+  
+  def select_sub_tab(tab)
+    @cc_current_sub_tab = tab
   end
   def current_sub_tab
-    @control_center_sub_tab
+    @cc_current_sub_tab
   end
   
   # Sets up a sidebar in control center.
   def sidebar(&block)
     if block_given?
+      @sidebar_set = true
       content_for :sidebar do
         yield
       end
@@ -64,6 +40,23 @@ module ControlCenter::Helpers
   end
   
   def sidebar?
-    yield(:sidebar) != nil
+    @sidebar_set ||= false
+    @sidebar_set
+  end
+  
+  def tab(tab_name, tab_url)
+    options = {}
+    options[:class] = "active" if  current_tab == tab_name
+    content_tag "li", options, true do
+      link_to tab_name, tab_url
+    end
+  end
+  
+  def sub_tab(tab_name, tab_url)
+    options = {}
+    options[:class] = "active" if  current_sub_tab == tab_name
+    content_tag "li", options, true do
+      link_to tab_name, tab_url
+    end
   end
 end

@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag 'control_center' %>
     <style type="text/css">
       #header { background: <%= ControlCenter::Config.theme_color %>; }
-      #secondary_nav li {background-color: <%= ControlCenter::Config.theme_color %>; }
+      #sub_tabs li {background-color: <%= ControlCenter::Config.theme_color %>; }
     </style>
   </head>
   <body>
@@ -21,9 +21,8 @@
       </ul>
     </div>
 
-    <ul id="primary_nav">
+    <ul id="tabs">
       <%= render :partial => "layouts/tabs" %>
-      <%= yield :primary_nav %>
     </ul>
     
     <% if flash[:message] %>
@@ -33,26 +32,20 @@
     <% if flash[:error] %>
       <div id="error"><%= flash[:error] %></div>
     <% end %>
-    
-    <ul id="secondary_nav" <%= "class=\"narrow\"" if sidebar? %>>
-      <%= render :partial => "layouts/sub_nav" %>
-      <%= yield :secondary_nav %>
+
+    <ul id="sub_tabs" <%= "class=\"narrow\"" if sidebar? %>>
+      <%= yield :sub_tabs %>
     </ul>
 
-    <% if defined? @sidebar && @sidebar %>
-      <div id="content_narrow">
-        <h2><%= @control_center_title %></h2>
+    <div id="content" <%= "class=\"narrow\"" if sidebar? %>>
+      <h2><%= @control_center_title %></h2>
 
-        <%= yield %>
-      </div>
+      <%= yield %>
+    </div>
+    
+    <% if sidebar? %>
       <div id="sidebar">
         <%= yield :sidebar %>
-      </div>
-    <% else %>
-      <div id="content">
-        <h2><%= @control_center_title %></h2>
-
-        <%= yield %>
       </div>
     <% end %>
   </body>
