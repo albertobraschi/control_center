@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require 'erb'
+
+# Load the yaml file
+spec_data = YAML::load_file("gemspec.yml")
+
+# generate as much as we can
+template = ERB.new <<-EOF
+  Gem::Specification.new do |s|
+    <% spec_data.each do |key, value| %>
+      s.<%= key %> = <%= value %>
+    <% end %>
+  end
+EOF
+
+# build path stuff off of our conventions
+puts template.result(binding)
