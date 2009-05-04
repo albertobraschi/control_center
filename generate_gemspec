@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
+require 'erb'
 
 files_to_include = Dir.glob("{lib,rails,generators,tasks,test}/**/*") + %w(README.markdown MIT-LICENSE)
 
 # create a file that includes all of those files in an array
-puts "GEM_FILES = ["
-files_to_include.each do |filename|
-  puts "'#{filename}',"
-end
-puts "]"
+GEM_FILES = "['#{files_to_include.join("', '")}']"
+
+template = ERB.new(File.read("control_center.gemspec.erb"))
+
+puts template.result(binding)
+
