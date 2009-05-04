@@ -4207,3 +4207,538 @@ Rendering test/index
 Rendered layouts/_header_links (0.2ms)
 Rendered layouts/_tabs (0.4ms)
 Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TestController#index (for 127.0.0.1 at 2009-05-02 10:12:49) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 34ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-02 10:12:54) [GET]
+
+
+ActionController::RoutingError (No route matches "/2" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-02 10:15:21) [GET]
+
+
+ActionController::RoutingError (No route matches "/forms" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-02 10:15:22) [GET]
+
+
+ActionController::RoutingError (No route matches "/forms" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:15:33) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:16:54) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:16:59) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:17:02) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.3ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:29:01) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:29:05) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:38:50) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:39:38) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:41:06) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:41:33) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:42:00) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:42:16) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:43:31) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:45:04) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:46:57) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:47:20) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.6ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:47:22) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:47:52) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:47:55) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:48:39) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:48:42) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:50:36) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-02 10:50:41) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:20:52) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.4ms)
+Rendered layouts/_tabs (9.1ms)
+Completed in 109ms (View: 95, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:21:05) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:21:06) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:25:23) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:26:51) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:27:51) [GET]
+  Parameters: {"name"=>"", "columns"=>"", "two"=>"", "username"=>"", "select"=>"Option 1"}
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.7ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms?name=&username=&select=Option+1&two=&columns=]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:28:14) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:28:16) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:29:46) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:30:23) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:30:54) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:31:28) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:31:30) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:31:59) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.3ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:33:12) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:34:18) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:35:21) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.3ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:39:35) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:44:48) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:46:27) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:48:18) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:48:43) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:49:08) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-03 21:52:58) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]

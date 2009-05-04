@@ -151,48 +151,34 @@ h2 {
 /* style for forms */
 form {
   margin: 20px 0;
+  width: 500px;
 }
-
-/* pager at bottom of listing pages */
-#pager {
-  text-align: center;
-  background: #eee;
-  padding: 4px;
-  margin: 7px 0;
+form > div {
+  margin-bottom: 10px;
+  clear: both;
 }
-
-/* style for tables that are used as reports */
-table {
-	border-collapse: collapse;
-	margin-bottom: 30px;
-}
-table thead tr {
-	border-bottom: 1px solid #000;
-}
-table tbody td {
-	padding-right: 10px;
-}
-
-fieldset {
-  border: 0;
+form > div div.col2 {
+  width: 200px;
+  float: left;
+  margin: 0 20px 10px 0;
 }
 label {
-  margin-top: 3px;
-  width: 100px;
-  float: left;
+  display: block;
+}
+fieldset {
+  border: 0;
+  border-top: 1px solid #ddd;
 }
 input[type="text"], input[type="password"] {
-  float: left;
   width: 200px;
 }
 textarea {
   margin: 0;
 }
-form div {
-  clear: both;
-}
 input[type="submit"] {
   margin-top: 20px;
+}
+form div.submit {
   clear: both;
 }
 
@@ -214,16 +200,25 @@ input[type="submit"] {
   margin: 3px 0;
 }
 .fieldWithErrors {
-  width: auto;
-  float: left;
-  clear: none;
+  display: inline;
 }
 .fieldWithErrors input[type="text"], .fieldWithErrors input[type="password"] {
   border: 2px solid #c00;
-  float: left;
 }
 .fieldWithErrors label {
   color: #c00;
+}
+
+/* style for tables that are used as reports */
+table {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+table thead tr {
+	border-bottom: 1px solid #000;
+}
+table tbody td {
+	padding-right: 10px;
 }
 
 /* makes something 100% width */
