@@ -1,7 +1,8 @@
 PKG_VERSION = "0.99"
 
 Gem::Specification.new do |s|
-
+  require 'gem_files'
+  
   s.name = 'control_center'
   s.version = PKG_VERSION
   s.platform = Gem::Platform::RUBY
@@ -13,7 +14,7 @@ Gem::Specification.new do |s|
     A Rails plugin that helps in quickly developing admin style interfaces.
   DESC
 
-  s.files = Dir.glob("{lib,rails,generators,tasks,test}/**/*") + %w(README.markdown MIT-LICENSE)
+  s.files = GEM_FILES
   s.require_path = 'lib'
   s.has_rdoc = true
 
