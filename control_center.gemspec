@@ -1,4 +1,4 @@
-PKG_VERSION = "0.99.1"
+PKG_VERSION = "0.99.2"
 
 Gem::Specification.new do |s|
   
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
     A Rails plugin that helps in quickly developing admin style interfaces.
   DESC
 
-  s.files = ['lib/control_center.rb', 'lib/generator.rb', 'lib/helpers.rb', 'lib/tab_builder.rb', 'rails/init.rb', 'generators/control_center', 'generators/control_center/control_center_generator.rb', 'generators/control_center/templates', 'generators/control_center/templates/_header_links.html.erb', 'generators/control_center/templates/_sub_tabs.html.erb', 'generators/control_center/templates/_tabs.html.erb', 'generators/control_center/templates/control_center.css', 'generators/control_center/templates/control_center.html.erb', 'generators/control_center/templates/control_center.rb', 'tasks/control_center_tasks.rake', 'test/control_center_test.rb', 'README.markdown', 'MIT-LICENSE']
+  s.files = ['lib/control_center.rb', 'lib/helpers.rb', 'lib/tab_builder.rb', 'rails/init.rb', 'generators/control_center', 'generators/control_center/control_center_generator.rb', 'generators/control_center/templates', 'generators/control_center/templates/_header_links.html.erb', 'generators/control_center/templates/_sub_tabs.html.erb', 'generators/control_center/templates/_tabs.html.erb', 'generators/control_center/templates/control_center.css', 'generators/control_center/templates/control_center.html.erb', 'generators/control_center/templates/control_center.rb', 'tasks/control_center_tasks.rake', 'test/control_center_test.rb', 'README.markdown', 'MIT-LICENSE']
   s.require_path = 'lib'
   s.has_rdoc = true
 
