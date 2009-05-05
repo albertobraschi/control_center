@@ -4742,3 +4742,27 @@ Rendering test/forms
 Rendered layouts/_header_links (0.2ms)
 Rendered layouts/_tabs (0.5ms)
 Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#index (for 127.0.0.1 at 2009-05-04 20:49:58) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 58ms (View: 38, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-04 20:50:07) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.8ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-04 20:50:36) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
