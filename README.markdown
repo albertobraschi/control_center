@@ -81,14 +81,14 @@ Sidebars
 --------
 Control Center has two primary layouts at present, a single column display and a two column display. The two column display shows a sidebar to the right side of the screen. To generate content for the sidebar, simply put normal content, like p, div, ul tags into the sidebar helper in your view:
 
-  <% sidebar do %>
-    <h3>This is a sidebar!</h3>
+    <% sidebar do %>
+      <h3>This is a sidebar!</h3>
     
-    <p>
-      Aw, yeah! This is a sidebar. Didn't think you'd be creating sidebars
-      today, did you? Well, you are!
-    </p>
-  <% end %>
+      <p>
+        Aw, yeah! This is a sidebar. Didn't think you'd be creating sidebars
+        today, did you? Well, you are!
+      </p>
+    <% end %>
 
 Forms
 -----
