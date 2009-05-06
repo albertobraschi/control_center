@@ -53,16 +53,49 @@ in your view, the tab titled *Tab 1* would be selected.
 
 Subtabs
 -------
-Subtabs will typically be defined in a partial that you create and included in the views that use that particular set of subtabs.
+Subtabs will typically be defined in a partial that you create and included in the views that use that particular set of subtabs. Although that's typical,
+it's not mandatory. The app/views/layouts/_tabs.html.erb partial is another
+great spot to put subtabs if you want to do more of a per-app tab configuration,
+but that's tricker to implement in many cases. Anyway, a set of subtabs will
+look something like this in your view:
+
+    <% sub_tabs do %>
+      <%= sub_tab "Sub Tab", "/subtab" %>
+      <%= sub_tab "Sub Tab 2", "/subtab2" %>
+    <% end %>
+    
+You can select what tab to mark as the current one with the select_sub_tab helper:
+
+    <% select_sub_tab "Sub Tab" %>
+    
+The sub_tabs helper does not output the tabs, because the Control Center
+layout has a specific place where it needs to put them. So, don't worry about
+where you put the sub tab definition in your view... as long as its in your
+view, they'll show up correctly.
 
 Header Navigation
 -----------------
+The content at the very top right of Control Center is great for login/logout links, help links, etc. You can modify that content by editing the app/views/layouts/_header_links.html.erb partial.
 
 Sidebars
 --------
+Control Center has two primary layouts at present, a single column display and a two column display. The two column display shows a sidebar to the right side of the screen. To generate content for the sidebar, simply put normal content, like p, div, ul tags into the sidebar helper in your view:
+
+  <% sidebar do %>
+    <h3>This is a sidebar!</h3>
+    
+    <p>
+      Aw, yeah! This is a sidebar. Didn't think you'd be creating sidebars
+      today, did you? Well, you are!
+    </p>
+  <% end %>
 
 Forms
 -----
+
+Screenshots
+-----------
+
 
 Where are the tests?
 --------------------
