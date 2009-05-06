@@ -30,9 +30,30 @@ You'll want to look at environment/initializers/control_center.rb to customize t
 
 Tabs
 ----
+Tabs are defined by default in the app/views/layouts/_tabs.html.erb partial. You can override the tabs in any page with the tabs helper.
+
+Tabs are defined as follows:
+
+    <%= tab "Title", "url" %>
+
+You can create as many tabs as you would like, but be aware that at present the tabs will simply wrap to the next line if you include too many. We'll hopefully fix that in a future release, although you probably shouldn't use so many tabs that it would wrap anyway.
+
+The tab method passes the url on to the Rails link_to helper, so the url can be a has or anything else that link_to accepts for its url parameter.
+
+To select a tab, simply use the select_tab method in your view. select_tab chooses a tab based on the title given to the tab, so for example, with a tab definition like:
+
+    <%= tab "Tab 1", "/some_url" %>
+    <%= tab "Tab 2", "/some_other_url" %>
+
+if you called:
+
+    <% select_tab "Tab 1" %>
+
+in your view, the tab titled *Tab 1* would be selected.
 
 Subtabs
 -------
+Subtabs will typically be defined in a partial that you create and included in the views that use that particular set of subtabs.
 
 Header Navigation
 -----------------
@@ -47,6 +68,25 @@ Where are the tests?
 --------------------
 I'm usually very good about testing my code, but I wasn't sure of the best way to test something that was so interface intensive, so tests simply aren't present for the 1.0 release. Tests are one of my biggest goals for the 1.1 release.
 
-Required Stuff
---------------
-Copyright (c) 2008-2009 Alan Johnson, released under the MIT license
+License
+-------
+Copyright (c) 2008-2009 Alan Johnson
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
