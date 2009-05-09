@@ -26,6 +26,10 @@ Now, from the root of your rails project, run the following command:
 
 Post-Installation Configuration
 -------------------------------
+Using Control Center is as easy as setting it as a layout in one of your controllers (or in your ApplicationController if you want it to be the layout across your entire app) with:
+
+    layout 'control_center'
+
 You'll want to look at environment/initializers/control_center.rb to customize the Control Center title and the color of the header. Also, you'll want to set your tabs up in app/views/layouts/_tabs.html.erb.
 
 Tabs
