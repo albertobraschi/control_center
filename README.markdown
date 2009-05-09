@@ -127,6 +127,14 @@ Where are the tests?
 --------------------
 I'm usually very good about testing my code, but I wasn't sure of the best way to test something that was so interface intensive, so tests simply aren't present for the 1.0 release. Tests are one of my biggest goals for the 1.1 release.
 
+What about IE?
+--------------
+I think most of Control Center should work fine in IE, but I haven't been as thorough as I would with, say, a production website design in testing IE compatibility, so don't be surprised if there are a few issues here and there.
+
+Reporting Issues
+----------------
+If something's not working like you expect it to, submit an issue through the GitHub issues tool for Control Center, and I'll take a look at your problem. You can find the issues tool [here](http://github.com/commondream/control_center/issues).
+
 Screenshot
 ----------
 ![Control Center Screenshot](http://cloud.github.com/downloads/commondream/control_center/Control_Center_-_Forms_Sample-1.png)
