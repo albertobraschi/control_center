@@ -121,9 +121,15 @@ If you would like a two column layout, use markup similar to the following:
 
 Control Center includes styles for the error states of the Rails helpers, and for the error_messages helper, so that you won't have to create style rules yourself.
 
+You can learn more about how to lay out your forms in Control Center by looking at the sample/app/views/test/forms.html.erb file in Control Center's source repository.
+
 Where are the tests?
 --------------------
 I'm usually very good about testing my code, but I wasn't sure of the best way to test something that was so interface intensive, so tests simply aren't present for the 1.0 release. Tests are one of my biggest goals for the 1.1 release.
+
+Screenshot
+----------
+![Control Center Screenshot](http://cloud.github.com/downloads/commondream/control_center/Control_Center_-_Forms_Sample-1.png)
 
 License
 -------
