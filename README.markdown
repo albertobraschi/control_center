@@ -92,10 +92,34 @@ Control Center has two primary layouts at present, a single column display and a
 
 Forms
 -----
+Forms in Control Center are fairly simple to implement. Control Center puts labels above fields and allows you to do either a single column of fields in your form or to do two columns.
 
-Screenshots
------------
+The markup for a field should look something like the following:
 
+    <div>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+    </div>
+    
+Of course, if you used the Rails helpers, it might look more like:
+
+    <div>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+
+If you would like a two column layout, use markup similar to the following:
+
+    <div>
+      <div class="col2">
+        [FIELD GOES HERE]
+      </div>
+      <div class="col2">
+        [FIELD GOES HERE]
+      </div>
+    </div>
+
+Control Center includes styles for the error states of the Rails helpers, and for the error_messages helper, so that you won't have to create style rules yourself.
 
 Where are the tests?
 --------------------
