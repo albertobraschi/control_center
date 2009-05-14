@@ -77,6 +77,8 @@ layout has a specific place where it needs to put them. So, don't worry about
 where you put the sub tab definition in your view... as long as its in your
 view, they'll show up correctly.
 
+Please note that sub_tabs at present don't work with versions of Rails < 2.2.
+
 Header Navigation
 -----------------
 The content at the very top right of Control Center is great for login/logout links, help links, etc. You can modify that content by editing the app/views/layouts/_header_links.html.erb partial.
