@@ -18,7 +18,7 @@ Installation as a RubyGem ensures that you don't get any weirdness due to instal
 
 Now that you've got the gem installed, you'll need to configure your application to use control center. Add a line like the following to your environment.rb:
 
-    config.gem "commondream-control_center"
+    config.gem "commondream-control_center", :lib => "control_center"
 
 Now, from the root of your rails project, run the following command:
 
