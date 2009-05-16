@@ -13,7 +13,7 @@
       #sub_tabs li {background-color: <%= ControlCenter::Config.theme_color %>; }
     </style>
     <% ControlCenter::Config.custom_css.each do |key, value| %>
-      <%= stylesheet_link_tag key, value %>
+      <%= stylesheet_link_tag key, value || {} %>
     <% end %>
   </head>
   <body>

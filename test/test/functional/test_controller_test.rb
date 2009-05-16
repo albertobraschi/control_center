@@ -24,4 +24,15 @@ class TestControllerTest < ActionController::TestCase
     
     assert_response :success
   end
+  
+  test "that viewing a page with no attributes set to a stylesheet works" do
+    ControlCenter::Config.custom_css = {
+      "custom_css_1" => nil
+    }
+    
+    get :index
+    
+    assert_select "link[href=?]", /\/stylesheets\/custom_css_1.css.*/, 
+        :count => 1
+  end
 end

@@ -105,3 +105,69 @@ Rendering test/index
 Rendered layouts/_header_links (0.1ms)
 Rendered layouts/_tabs (0.4ms)
 Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:25:22) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:25:22) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:25:22) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:25:49) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:25:49) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.1ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:25:49) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.1ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:26:40) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:26:40) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.1ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing TestController#index (for 0.0.0.0 at 2009-05-16 10:26:40) [GET]
+Rendering template within layouts/control_center
+Rendering test/index
+Rendered layouts/_header_links (0.1ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/]
