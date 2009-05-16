@@ -35,4 +35,15 @@ class TestControllerTest < ActionController::TestCase
     assert_select "link[href=?]", /\/stylesheets\/custom_css_1.css.*/, 
         :count => 1
   end
+  
+  test "that adding custom javascripts works" do
+    ControlCenter::Config.include_javascript = %w(application prototype)
+    
+    get :index
+    
+    assert_select "script[src=?]", /\/javascripts\/application.js.*/, 
+        :count => 1
+    assert_select "script[src=?]", /\/javascripts\/prototype.js.*/, 
+        :count => 1
+  end
 end
