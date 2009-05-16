@@ -18,7 +18,7 @@ Installation as a RubyGem ensures that you don't get any weirdness due to instal
 
 Now that you've got the gem installed, you'll need to configure your application to use control center. Add a line like the following to your environment.rb:
 
-    config.gem "commondream-control_center"
+    config.gem "commondream-control_center", :lib => "control_center"
 
 Now, from the root of your rails project, run the following command:
 
@@ -26,9 +26,11 @@ Now, from the root of your rails project, run the following command:
 
 Post-Installation Configuration
 -------------------------------
-You'll want to look at environment/initializers/control_center.rb to customize the Control Center title, the color of the header and several other options.
+Using Control Center is as easy as setting it as a layout in one of your controllers (or in your ApplicationController if you want it to be the layout across your entire app) with:
 
-Also, you'll want to set your tabs up in app/views/layouts/_tabs.html.erb.
+    layout 'control_center'
+
+You'll want to look at environment/initializers/control_center.rb to customize the Control Center title, the color of the header and several other options. Also, you'll want to set your tabs up in app/views/layouts/_tabs.html.erb.
 
 Tabs
 ----
@@ -74,6 +76,8 @@ The sub_tabs helper does not output the tabs, because the Control Center
 layout has a specific place where it needs to put them. So, don't worry about
 where you put the sub tab definition in your view... as long as its in your
 view, they'll show up correctly.
+
+Please note that sub_tabs at present don't work with versions of Rails < 2.2.
 
 Header Navigation
 -----------------
