@@ -3,7 +3,7 @@ body {
   font-family: arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: small;
+  font-size: 12px;
 }
 a img {
   border: 0;
@@ -117,7 +117,7 @@ h2 {
 }
 #content_inside {
   padding: 5px 10px 10px 10px;
-  margin: 0 10px;
+  margin: 0 10px 10px 10px;
   background: #fff;
   border-right: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
@@ -149,14 +149,16 @@ form {
   margin: 20px 0;
   width: 500px;
 }
-form > div {
+form div {
   margin-bottom: 10px;
   clear: both;
+  float: left;
 }
-form > div div.col2 {
+form div div.col2 {
   width: 200px;
   float: left;
   margin: 0 20px 10px 0;
+  clear: none;
 }
 label {
   display: block;
@@ -164,6 +166,14 @@ label {
 fieldset {
   border: 0;
   border-top: 1px solid #ddd;
+  clear: both;
+  margin-top: 20px 0;
+  padding: 0.8em 0;
+}
+fieldset legend {
+  font-weight: bold;
+  margin: 0 0 0 10px;
+  font-size: 1.2em;
 }
 input[type="text"], input[type="password"] {
   width: 200px;
