@@ -419,3 +419,75 @@ Rendering test/forms
 Rendered layouts/_header_links (0.2ms)
 Rendered layouts/_tabs (0.5ms)
 Completed in 36ms (View: 9, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:27:02) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.3ms)
+Rendered layouts/_tabs (0.6ms)
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:29:12) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.3ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 32ms (View: 9, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:30:37) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.6ms)
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:31:25) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.4ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:32:44) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 31ms (View: 9, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:34:42) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.6ms)
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:36:57) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 31ms (View: 9, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:40:45) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.6ms)
+Completed in 32ms (View: 10, DB: 0) | 200 OK [http://localhost/test/forms]
+
+
+Processing TestController#forms (for 127.0.0.1 at 2009-05-16 11:43:40) [GET]
+Rendering template within layouts/control_center
+Rendering test/forms
+Rendered layouts/_header_links (0.2ms)
+Rendered layouts/_tabs (0.5ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/test/forms]

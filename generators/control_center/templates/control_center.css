@@ -147,17 +147,17 @@ h2 {
 /* style for forms */
 form {
   margin: 20px 0;
-  width: 500px;
+  width: 100%;
 }
 form div {
-  margin-bottom: 10px;
   clear: both;
   float: left;
+  margin-bottom: 6px;
 }
 form div div.col2 {
   width: 200px;
   float: left;
-  margin: 0 20px 10px 0;
+  margin: 0 20px 0 0;
   clear: none;
 }
 label {
@@ -185,12 +185,14 @@ input[type="submit"] {
 }
 form div.submit {
   clear: both;
+  float: none;
 }
 
 /* styling for errors */
 .errorExplanation {
   border: 2px solid #c00;
   margin-bottom: 8px;
+  width: 100%;
 }
 .errorExplanation h2 {
   float: none;
@@ -206,6 +208,7 @@ form div.submit {
 }
 .fieldWithErrors {
   display: inline;
+  margin: 0; padding: 0;
 }
 .fieldWithErrors input[type="text"], .fieldWithErrors input[type="password"] {
   border: 2px solid #c00;

@@ -1,6 +1,6 @@
 #!/bin/bash
 script/destroy control_center --force
 
-rsync --recursive --exclude sample --delete .. vendor/plugins/control_center
+rsync --recursive --exclude test --delete .. vendor/plugins/control_center
 
 script/generate control_center --force
