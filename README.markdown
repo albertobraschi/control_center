@@ -26,7 +26,9 @@ Now, from the root of your rails project, run the following command:
 
 Post-Installation Configuration
 -------------------------------
-You'll want to look at environment/initializers/control_center.rb to customize the Control Center title and the color of the header. Also, you'll want to set your tabs up in app/views/layouts/_tabs.html.erb.
+You'll want to look at environment/initializers/control_center.rb to customize the Control Center title, the color of the header and several other options.
+
+Also, you'll want to set your tabs up in app/views/layouts/_tabs.html.erb.
 
 Tabs
 ----
@@ -122,6 +124,17 @@ If you would like a two column layout, use markup similar to the following:
 Control Center includes styles for the error states of the Rails helpers, and for the error_messages helper, so that you won't have to create style rules yourself.
 
 You can learn more about how to lay out your forms in Control Center by looking at the sample/app/views/test/forms.html.erb file in Control Center's source repository.
+
+Custom CSS
+----------
+To add custom CSS to Control Center, simply use the custom_css config property in the initializer. It expects a hash with keys for each of the stylesheets to pass to the Rails stylesheet_link_tag helper, and with values for the options to pass to the helper. For example:
+
+    ControlCenter::Config.custom_css = { 
+      "custom_css_1" => { :media => :all }, 
+      "custom_css_2" => { :media => :print }
+    }
+
+Would create two links in Control Center, one to a stylesheet named custom_css_1 with a media attribute of all, and one to custom_css_2 with a media attribute of print.
 
 Where are the tests?
 --------------------
