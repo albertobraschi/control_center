@@ -11,4 +11,4 @@ ControlCenter::Config.theme_color = "#0033CC"
 # }
 
 # Custom JavaScript Includes
-#ControlCenter::Config.include_javascript = %w(:defaults)
+#ControlCenter::Config.include_javascript = [:defaults]

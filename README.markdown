@@ -140,6 +140,14 @@ To add custom CSS to Control Center, simply use the custom_css config property i
 
 Would create two links in Control Center, one to a stylesheet named custom_css_1 with a media attribute of all, and one to custom_css_2 with a media attribute of print.
 
+Custom JavaScript
+-----------------
+Add custom JavaScript to the Control Center interface by using the include_javascript property in the initializer. The value you set to include_javascript gets passed to the Rails javascript_include_tag helper.
+
+    ControlCenter::Config.include_javascript = [ :defaults ]
+    
+This would cause the Rails default javascripts (Prototype, Scriptaculous, and application.js) to be inluded with Control Center. The scripts are included at the bottom of the body of your page, as per the YSlow guidelines.
+
 Where are the tests?
 --------------------
 I'm usually very good about testing my code, but I wasn't sure of the best way to test something that was so interface intensive, so tests simply aren't present for the 1.0 release. Tests are one of my biggest goals for the 1.1 release.
