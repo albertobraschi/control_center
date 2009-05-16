@@ -18,4 +18,10 @@ class TestControllerTest < ActionController::TestCase
         :count => 1
     assert_select "link[media=?]", "print", :count => 1
   end
+  
+  test "that viewing a page with no custom stylesheets works" do
+    get :index
+    
+    assert_response :success
+  end
 end
