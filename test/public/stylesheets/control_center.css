@@ -218,9 +218,11 @@ table thead th {
 }
 table tbody th {
   text-align: left;
+  vertical-align: top;
 }
 table tbody td {
 	padding: 2px 10px;
+  vertical-align: top;
 }
 
 /* makes something 100% width */
